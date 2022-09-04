@@ -414,7 +414,10 @@ img {
     display: flex;
     justify-content: flex-end;
 
-    position: relative
+    position: relative;
+    margin-bottom: 160px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .contact_logo{
@@ -440,3 +443,122 @@ img {
 .contact_link{
     position: absolute;
 }
+
+
+/* footer */
+
+
+.footer_nav ul{
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 40px;
+    padding-right: 160px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+
+.footer_nav li{
+    font-size: 20px;
+    font-family: sofia-pro, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 0 15px;
+    
+
+}
+
+.footer_border{
+    border-top: 1px solid #1A1A1A;
+}
+
+.footer_end{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    align-items: center;
+    margin: 0 auto; 
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer_end p{
+    font-size: 16px;
+    font-family: sofia-pro, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.footer_end img{
+    width: 36px;
+    height: 36px;
+}
+
+
+/* ハンバーガーメニュー */
+
+.hamburger_nav_inner{
+    display: none;
+}
+
+.hamburger_btn{
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    height: 30px;
+
+}
+
+.hamburger_btn span{
+    background: #1A1A1A;
+    display: block;
+    width: 33px;
+    height: 3px;
+    position: relative;
+    top: 10px;
+    transition: 0.3s;
+
+    
+}
+
+.hamburger_btn span::before,
+.hamburger_btn span::after {
+    content: '';
+    background: #1A1A1A;
+    display: block;
+    width: 33px;
+    height: 3px;
+    position: absolute;
+    transition: 0.3s;
+}
+
+.hamburger_btn span::before{
+    bottom: 10px;
+}
+
+.hamburger_btn span::after{
+    top: 10px;
+}
+
+/* open時 */
+
+.open span{
+    background: transparent;
+    
+}
+
+
+.open span::before{
+    bottom: 0px;
+    transform: rotate(45deg);
+}
+
+.open span::after{
+    transform: rotate(135deg);
+    top: 0px
+    
+}
+
+

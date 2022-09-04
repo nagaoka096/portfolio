@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://use.typekit.net/usq7ggx.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 
@@ -37,11 +38,21 @@
         <nav class="fastview_nav">
             <ul>
                 <li><a href="">service</a></li>
-                <li><a href="">about</a></li>
+                <li><a href="about.html">about</a></li>
                 <li><a href="">works</a></li>
                 <li class="contact_link"><a href=""><p>contact</p></a></li>
             </ul>
         </nav>
+
+            <div class="hamburger_btn"><span></span></div> <!-- ボタンになる線 -->
+            <nav class="hamburger_nav_inner">
+                <ul>
+                    <li><a href="">service</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">works</a></li>
+                    <li class="contact_link"><a href=""><p>contact</p></a></li>
+                </ul>
+            </nav>
     </div>
     
     <main>
@@ -175,7 +186,38 @@
         </section>
     </main>
 
+    <footer>
+        <div class="footer_nav">
+            <ul>
+                <li><a href="">service</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">works</a></li>
+                <li><a href="">contact</a></li>
+            </ul>
+        </div>
+        <div class="footer_border"></div>
 
+        <div class="footer_end">
+            <div>
+                <p>
+                    © nagaoka madoka, All rights reserved.
+                </p>
+            </div>
+            <div class="footer_sns">
+                <a href="#"><img src="images/footer_Instagram@2x.png" alt=""></a>
+            </div>
+        </div>
+        
+    </footer>
+
+    <script>
+        $(function(){
+            $('hamburger_btn').click(function () {
+                $('.hamburger_nav_inner').fadeToggle();
+                $('hamburger_btn').toggleClass('open');
+            });
+        });
+    </script>
     
 </body>
 </html>
