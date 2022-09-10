@@ -1,0 +1,455 @@
+@charset "utf-8";
+
+/* リセット */
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #1A1A1A;
+    font-family: "Yu Gothic","YuGothic","Roboto","Helvetica Neue","Hiragino Kaku Gothic Pro","Meiryo","Arial","sans-serif";
+    font-feature-settings: "palt";
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+
+
+/*下層ページheader*/
+
+.header_wrap{
+    margin-top: 80px;
+}
+
+.header{
+    max-width: 1070px;
+    margin: 80px auto;
+}
+
+.header img{
+    width: 175px;
+}
+
+.header_text p{
+    font-size: 18px;
+    color: #1A1A1A;
+    font-weight: bold;
+    line-height: 1.75;
+    font-family: sofia-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+.contact_link p{
+    padding-top: 20px;
+    font-family: sofia-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #A95045;
+}
+
+
+
+/*お問い合わせフォーム*/
+
+
+
+.contact h2{
+    width: 174px;
+    margin-bottom: 60px;
+}
+
+.contact_logo{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+
+
+.contact_title{
+    margin: 0 auto;
+    max-width: 1080px;
+    text-align: center;
+    margin-bottom: 135px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.contact_text{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.maintext{
+    font-size: 18px;
+    line-height: 1.66;
+    margin-bottom: 115px;
+    padding: 0px 70px;
+
+}
+
+.subtext{
+    font-size: 15px;
+    margin-bottom: 115px;
+}
+
+
+
+
+/* ここからコピー */
+
+form{
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.contact-bg {
+    background: #e4eeef;
+    padding: 100px 0;
+    margin: 100px auto 0;
+}
+
+.contact-message {
+    text-align: center;
+    font-size: 14px;
+    line-height: 2;
+    margin-bottom: 50px;
+}
+
+.message-notice {
+    color: #c10811;
+    font-size: 14px;
+}
+
+.essential {
+    background: #c10811;
+    color: #fafafa;
+    font-size: 10px;
+    padding: 5px 5px;
+    font-weight: normal;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.contact-area {
+    background: #fafafa;
+    padding: 90px;
+    margin: 100px auto;
+    width: 1000px;
+}
+
+.contact-table {
+    width: 100%;
+}
+
+.table-list {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 0.05em;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.table-list th {
+    font-size: 13px;
+    font-weight: bold;
+    width: 250px;
+    text-align: left;
+}
+
+.table-list-address {
+    flex-wrap: wrap;
+}
+
+.table-list-address .input-area {
+    margin-bottom: 10px;
+}
+
+.input-area {
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 0.05em;
+    padding: 0 10px;
+    border: none;
+    width: 550px;
+    height: 40px;
+    box-sizing: border-box;
+    /* border: 1px solid #c4c4c4; */
+    background: #efefef;
+    border-radius: 5px;
+}
+
+.table-list td {
+    font-size: 13px;
+    width: calc(100% - 250px);
+}
+
+input::placeholder {
+    color: #bfbfbf;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+textarea {
+    border: none;
+    width: 550px;
+    height: 200px;
+    padding: 0;
+    /* border: 1px solid #c4c4c4; */
+    resize: vertical; /* 横方向のみサイズを固定する */
+    background: #efefef;
+    border-radius: 5px;
+}
+
+textarea::placeholder {
+    color: #bfbfbf;
+    font-size: 12px;
+}
+
+input[type="text"] {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.contact-area .text {
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.contact-area .text a {
+    color: #000;
+    border-bottom: 1px solid #000;
+    transition: all .3s;
+    text-decoration: none;
+}
+
+.contact-area .text a:hover {
+    border-bottom: 1px solid #777;
+    padding-bottom: 5px;
+    color: #777;
+}
+
+.submit-button {
+    background: none;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    margin: 30px auto 0;
+    cursor: pointer;
+    border: 1px solid #1A1A1A;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.5;
+    outline: none;
+    -webkit-transition: all .3s;
+    transition: all .5s;
+    padding: 20px 100px;
+    border-radius: 5px;
+    margin-bottom: 175px;
+}
+
+.submit-button:hover {
+    background: #efefef;
+    color: #000; /*文字の色*/
+}
+
+
+
+
+/* footer */
+
+
+.footer_nav ul{
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 40px;
+    max-width: 1080px;
+    margin: 0 auto;
+
+}
+
+
+.footer_nav li{
+    font-size: 20px;
+    font-family: sofia-pro, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 0 15px;
+    
+
+}
+
+.footer_border{
+    border-top: 1px solid #1A1A1A;
+    width: 1290px;
+    margin: 0 auto;
+}
+
+.footer_end{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1080px;
+    align-items: center;
+    margin: 0 auto; 
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer_end p{
+    font-size: 16px;
+    font-family: sofia-pro, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.footer_end img{
+    width: 36px;
+    height: 36px;
+}
+
+
+
+/* ハンバーガーメニュー */
+
+.hamburger_nav_inner{
+    display: none;
+}
+
+.hamburger_btn{
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    height: 30px;
+    z-index: 100;
+    transition-duration: .8s;
+
+}
+
+.hamburger_btn.fixed{
+    position: fixed;
+    top: 50px;
+    left: auto;
+    z-index: +1;
+}
+
+.hamburger_btn.fixed.none {
+    opacity: 0;
+    z-index: -1;
+}
+
+.hamburger_btn span{
+    background: #1A1A1A;
+    display: block;
+    width: 33px;
+    height: 3px;
+    position: relative;
+    top: 10px;
+    transition: 0.3s;
+    
+}
+
+.hamburger_btn span::before,
+.hamburger_btn span::after {
+    content: '';
+    background: #1A1A1A;
+    display: block;
+    width: 33px;
+    height: 3px;
+    position: absolute;
+    transition: 0.3s;
+}
+
+.hamburger_btn span::before{
+    bottom: 10px;
+}
+
+.hamburger_btn span::after{
+    top: 10px;
+}
+
+/* open時 */
+
+.open span{
+    background: transparent;
+    
+}
+
+
+.open span::before{
+    bottom: 0px;
+    transform: rotate(45deg);
+    background: #FFF;
+}
+
+.open span::after{
+    transform: rotate(135deg);
+    background: #FFF;
+    top: 0px
+    
+}
+
+.hamburger_nav_inner{
+    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+}
+
+.hamburger_nav_inner ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hamburger_nav_inner ul li{
+    padding: 20px;
+    color: #FFF;
+    font-size: 18px;
+    text-align: center;
+}

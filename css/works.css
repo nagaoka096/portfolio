@@ -49,23 +49,24 @@ img {
 
 
 
-/*header*/
+/*下層ページheader*/
 
 .header_wrap{
-    margin: 0 auto;
-    position: absolute;
-    top: 50px;
-    width: 100%;
+    margin-top: 80px;
 }
 
 .header{
     max-width: 1070px;
-    margin: 0 auto;
+    margin: 80px auto;
+}
+
+.header img{
+    width: 175px;
 }
 
 .header_text p{
     font-size: 18px;
-    color: #FFFFFF;
+    color: #1A1A1A;
     font-weight: bold;
     line-height: 1.75;
     font-family: sofia-pro, sans-serif;
@@ -73,51 +74,7 @@ img {
     font-style: normal;
 }
 
-.fastview img{
-    max-width: 1070px;
-    height: auto;
-    margin-bottom: 165px;
-    
-    
-}
 
-.fastview_nav{
-    width: 20%;
-    padding-left: 45px;
-    position: relative;
-
-}
-
-.fastview_nav ul{
-    position: absolute;
-    top: 50%;
-}
-
-
-
-.fastview_nav li{
-
-    font-size: 20px;
-    color: #1A1A1A;
-    line-height: 1.888;
-    font-family: sofia-pro, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-
-}
-
-.fastview_nav a{
-    display: block;/*アンカーの幅を広げる*/
-}
-
-.fastview_contents{
-    display: flex;
-    
-    max-width: 1200px;
-    margin: 0 auto;
-    
-
-}
 
 .contact_link p{
     padding-top: 20px;
@@ -128,178 +85,58 @@ img {
 }
 
 
-/*メインテキスト*/
 
-.main_title{
-    max-width: 850px;
-    margin: 0 auto;
-    padding-left: 20px;
-}
-
-.main_text{
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 50px;
-    line-height: 1.8;
-}
-
-.sub_text{
-    font-size: 20px;
-    font-weight: lighter;
-    line-height: 1.7;
-    margin-bottom: 180px;
-}
-
-/* スクロール */
-.main_title a {
-    display: inline-block;
-    position: absolute;
-    right: 40px;
-    z-index: 2;
-    padding: 10px 10px 110px;
-    margin-right: 215px;
-    overflow: hidden;
-    color: #1A1A1A;
-    font-size: 20px;
-    font-family: sofia-pro, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: .2em;
-    text-decoration: none;
-    writing-mode: vertical-lr;
-}
-.main_title a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 1px;
-    height: 100px;
-    background: #1A1A1A;
-    
-}
-
-.main_title a::after {
-    animation: sdl 2s cubic-bezier(1, 0, 0, 1) infinite;
-}
-@keyframes sdl {
-    0% {
-    transform: scale(1, 0);
-    transform-origin: 0 0;
-    }
-    30% {
-    transform: scale(1, 1);
-    transform-origin: 0 0;
-    }
-    70% {
-    transform: scale(1, 1);
-    transform-origin: 0 100%;
-    }
-    100% {
-    transform: scale(1, 0);
-    transform-origin: 0 100%;
-    }
-}
+/*about*/
 
 
 
-/*service*/
-
-.service{
-    max-width: 850px;
+.works{
+    max-width: 1361px;
     margin: 0 auto;
 }
-
-.service_contents{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 170px;
-
-}
-
-.service h2{
-    width: 166px;
-    margin-bottom: 65px;
-}
-
-
-.design{
-    display: flex;
-    align-items: center;
-    
-}
-
-.design_icon img{
-    width: 80px;
-    margin-right: 25px;
-    
-}
-
-.line img{
-    height: 135px;
-    margin-right: 10px;
-    
-}
-
-.design_text p{
-    font-size: 15px;
-    width: 250px;
-    line-height: 1.8;
-    margin-left: 25px;
-}
-
-.coding{
-    display: flex;
-    align-items: center;
-}
-
-.coding_icon img{
-    width: 80px;
-    margin-right: 25px;
-    
-}
-
-
-.coding_text p{
-    font-size: 15px;
-    width: 250px;
-    line-height: 1.8;
-    margin-left: 25px;
-    
-}
-
-.service_contents .title{
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 1.75;
-
-}
-
-/*works*/
 
 .works_logo{
     display: flex;
     justify-content: center;
-    height: 41px;
     margin-bottom: 40px;
-    
 
 }
 
-.works_slider{
+.works_logo img{
+    width: 140px;
+    margin-bottom: 110px;
+}
+
+.main_img{
+    width: 1106px;
+    margin-bottom: 100px;
+}
+
+.caption {
     display: flex;
     justify-content: center;
-    margin-bottom: 215px;
+
 }
 
-.works_contents{
-    align-self: center;
-    margin: 0 0 0 55px;
-    padding: 26px 40px 0 0;
-    height: 180px;
-    width: 276px;
-    position: relative;
+.designcafe_PC{
+    width: 478px;
+    margin-right: 75px;
+}
+
+.designcafe_SF{
+    width: 295px;
+}
+
+.tag{
+    display: flex;
+    align-items: center;
+}
+
+.works_contents .inner{
+    max-width: 850px;
+    margin: 0px auto 50px;
+    
+
 }
 
 .works_contents .category{
@@ -315,8 +152,8 @@ img {
 }
 
 .works_contents .technology{
-    margin-top: 12px;
-    font-size: 15px;
+    margin-left: 15px;
+    font-size: 20px;
     line-height: 1.73;
     font-family: sofia-pro, sans-serif;
     font-weight: 400;
@@ -326,7 +163,7 @@ img {
 
 .works_contents .corporation{
     margin-top: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 15px;
     font-size: 30px;
     line-height: 0.733;
     font-family: sofia-pro, sans-serif;
@@ -335,53 +172,18 @@ img {
 
 }
 
-.works_return{
-    position: absolute;
-    right: 230px;
-}
-
-.works_next{
-    position: absolute;
-    right: 150px;
-}
 
 
-
-/*about*/
-
-
-
-.about_me h2{
-    width: 138px;
-    height: 42px;
-    margin-bottom: 60px;
-}
-
-.about_me{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
+.text {
     max-width: 850px;
-
+    margin: 0 auto;
 }
 
-
-
-.about_text{
-    width: 50%;
-}
-
-.about_title{
-    font-size: 25px;
-    line-height: 1.4;
-    font-weight: bold;
-    margin-bottom: 30px;
-}
-
-.about_main{
+.main_text{
     font-size: 15px;
-    line-height: 1.4;
-    width: 335px;
+    line-height: 1.73;
+    margin-bottom: 180px;
+    letter-spacing: 0.05em;
 }
 
 .about_more{
@@ -409,6 +211,7 @@ img {
 
 }
 
+
 /* contact */
 
 .contact{
@@ -417,6 +220,7 @@ img {
     max-width: 1365px;
     margin: 0 auto;
     width: 100%;
+    z-index: -1;
 
 }
 
@@ -431,12 +235,14 @@ img {
     position: absolute;
     top: 80px;
     left: 130px;
+    
 }
 
 .contact_main{
     position: absolute;
     top: 160px;
     left: 130px;
+    
 }
 
 .contact_text{
@@ -457,15 +263,16 @@ img {
     width: 120px;
     display: block;
     padding:30px 60px;
+    
 }
 
 .contact_more p{
     color: #FFF;
     font-size: 20px;
+
+
 }
 
-/* .contact_link{ */
-    /* position: relative; */
 
 
 
