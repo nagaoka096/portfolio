@@ -300,6 +300,7 @@ img {
     height: 180px;
     width: 276px;
     position: relative;
+    z-index: -1;
 }
 
 .works_contents .category{
@@ -311,6 +312,7 @@ img {
     font-family: sofia-pro, sans-serif;
     font-weight: 500;
     font-style: normal;
+
 
 }
 
@@ -422,7 +424,7 @@ img {
 
 .contact_box{
     position: relative;
-    z-index: -1;
+    /* z-index: -1; */
     margin-bottom: 155px;
 }
 
