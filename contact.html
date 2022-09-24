@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>お問い合わせ｜nagaoka.portfolio</title>
     <link rel="stylesheet" href="css/contact.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://use.typekit.net/usq7ggx.css">
@@ -38,11 +38,27 @@
 
             <div class="hamburger_btn"><span></span></div> <!-- ボタンになる線 -->
             <nav class="hamburger_nav_inner">
+                <div class="toppage">
+                    <a href="index.html"><div>
+                    <h1>
+                        <img src="images/pc_header_logo@2x.png" alt="portfolio">
+                    </h1>
+                        <div class="toppage_text">
+                            <p>
+                            nagaoka madoka
+                            <br>
+                            portfolio.
+                            <br>
+                            web design and coding
+                            </p>
+                        </div>
+                    </div></a>
+                </div>
                 <ul>
-                    <li><a href="#service">service</a></li>
-                    <li><a href="about.html">about</a></li>
-                    <li><a href="works.html">works</a></li>
-                    <li class="contact_link"><a href="contact.html"><p>contact</p></a></li>
+                    <li><a href="#service"><img src="images/service_white@2x.png" alt=""><p>できること</p></a></li>
+                    <li><a href="about.html"><img src="images/about_white@2x.png" alt=""><p>わたしのこと</p></a></li>
+                    <li><a href="works.html"><img src="images/works_white@2x.png" alt=""><p>制作実績</p></a></li>
+                    <li><a href="contact.html"><img src="images/contact_white@2x.png" alt=""><p>お問い合わせ</p></a></li>
                 </ul>
             </nav>
     </div>
@@ -62,13 +78,13 @@
                     必須項目が付いている項目はお手数ですが、必ずご入力をお願いいたします。
                 </p>
                 <p class="subtext">
-                    以下のフォームに必要事項をご入力いただき、プライバシーポリシーをご確認のうえ、送信ボタンを押してください。<br>（*マークは必須項目です。）
+                    <!-- 以下のフォームに必要事項をご入力いただき、プライバシーポリシーをご確認のうえ、送信ボタンを押してください。<br>（*マークは必須項目です。） -->
                 </p>
             </div>
         </section>
 
         <div class="contact-inner">
-            <form method="post">
+            <form method="post" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScJ8VP1DRzdNxGFdSuNXDaUekewvBgqzLKcqgJj8uVLjrngJA/formResponse">
                 <table class="contact-table">
 
 
@@ -78,7 +94,7 @@
                             <label for="name">お名前<span class="essential">必須</span></label>
                         </th>
                         <td>
-                            <input type="text" name="yourname" id="name" placeholder="お名前をご入力ください" class="input-area" autocomplete="name">
+                            <input type="text" name="entry.1805709769" id="name" placeholder="お名前をご入力ください" class="input-area" autocomplete="name">
                         </td>
                     </tr>
 
@@ -87,7 +103,7 @@
                     <tr class="table-list">
                         <th><label for="furigana">ふりがな<span class="essential">必須</span></label></th>
                         <td>
-                            <input type="text" name="yourname" id="furigana" placeholder="ふりがなをご入力ください" class="input-area">
+                            <input type="text" name="entry.2138542289" id="furigana" placeholder="ふりがなをご入力ください" class="input-area">
                         </td>
                     </tr>
 
@@ -96,7 +112,7 @@
                     <tr class="table-list">
                         <th><label for="mail">メールアドレス<span class="essential">必須</span></label></th>
                         <td>
-                            <input id="mail" type="email" name="mail" placeholder="メールアドレスをご入力ください" class="input-area" autocomplete="email">
+                            <input id="mail" type="email" name="entry.759795751" placeholder="メールアドレスをご入力ください" class="input-area" autocomplete="email">
                         </td>
                     </tr>
 
@@ -105,7 +121,7 @@
                     <tr class="table-list">
                         <th><label for="comment">お問い合わせ内容<span class="essential">必須</span></label></th>
                         <td>
-                            <textarea id="comment" name="comment"></textarea>
+                            <textarea id="comment" name="entry.1282460797"></textarea>
                         </td>
                     </tr>
 

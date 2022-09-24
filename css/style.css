@@ -230,10 +230,14 @@ img {
     
 }
 
-.design_icon img{
+.design_icon_pc img{
     width: 80px;
     margin-right: 25px;
     
+}
+
+.design_icon_sf img{
+    display: none;
 }
 
 .line img{
@@ -254,10 +258,14 @@ img {
     align-items: center;
 }
 
-.coding_icon img{
+.coding_icon_pc img{
     width: 80px;
     margin-right: 25px;
     
+}
+
+.coding_icon_sf img{
+    display: none;
 }
 
 
@@ -352,6 +360,13 @@ img {
 /*about*/
 
 
+.about_logo_sf{
+    display: none;
+}
+
+.about_img{
+    width: 330px;
+}
 
 .about_me h2{
     width: 138px;
@@ -498,6 +513,7 @@ img {
     border-top: 1px solid #1A1A1A;
     width: 1290px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .footer_end{
@@ -522,12 +538,57 @@ img {
     height: 36px;
 }
 
+.topbtn_sf{
+    display: none;
+
+}
+
 
 
 /* ハンバーガーメニュー */
 
+.toppage{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.toppage_text{
+    margin-bottom: 250px;
+}
+
+.toppage_text p{
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: 1.75;
+    font-family: sofia-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.toppage img{
+    width: 176px;
+}
+
 .hamburger_nav_inner{
     display: none;
+    z-index: 50;
+}
+
+.hamburger_nav_inner li p{
+    padding-top: 20px;
+    font-family: sofia-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #FFF;
+    margin: 5px 0px 60px;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+
+}
+
+.hamburger_nav_inner li img{
+    height: 40px;
 }
 
 .hamburger_btn{
@@ -607,6 +668,8 @@ img {
 .hamburger_nav_inner{
     position: absolute;
     position: fixed;
+    overflow-y: scroll; 
+    z-index: 99;
     top: 0;
     left: 0;
     width: 100%;
@@ -615,10 +678,11 @@ img {
 }
 
 .hamburger_nav_inner ul{
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
 
 .hamburger_nav_inner ul li{
@@ -626,4 +690,272 @@ img {
     color: #FFF;
     font-size: 18px;
     text-align: center;
+}
+
+
+
+@media screen and (max-width:767px){
+
+    .header_wrap{
+        top: 30px;
+        left: 30px;
+    }
+
+    .header img{
+        width: 135px;
+    }
+    .header_text p{
+        font-size: 14px;
+    }
+
+
+
+    /* PC用ナビゲーションを消す */
+
+    .fastview_nav{
+        display: none;
+    }
+
+    .fastview img{
+        width: 100%;
+        margin-bottom: 70px;
+    }
+
+    /* スクロールダウンを消す */
+    .main_title a{
+        display: none;
+    }
+
+    .main_title{
+        padding: 0px 25px;
+    }
+
+
+    .main_text{
+        font-size: 4.533vw;
+        margin-bottom: 35px;
+        letter-spacing: 0.027em;
+    }
+
+    .sub_text{
+        font-size: 3.733vw;
+        margin-bottom: 80px;
+        line-height: 1.785;
+    }
+
+    .sub_text br{
+        display: none;
+    }
+
+    /* サービスの内容を縦並びにする */
+    .service_contents{
+        display: block;
+        margin-bottom: 105px;
+        
+    }
+
+    /* サーピスロゴを中央揃え */
+    .service_logo{
+        margin: 0px auto;
+    }
+
+    .line img{
+        height: 100px;
+    }
+
+    /* pc版imgを消す */
+    .design_icon_pc img{
+        display: none;
+    }
+
+    .design_icon_sf img{
+        display: block;
+        width: 80px;
+        margin: 0 auto 30px;
+    }
+
+    /* 説明文を中央揃え */
+    .design{
+        justify-content: center;
+        margin-bottom: 80px;
+    }
+
+    .design_text p{
+        margin-left: 10px;
+        font-size: 3.733vw;
+    }
+
+    .design_text .title{
+        font-size: 5.333vw;
+    }
+
+    /* pc版imgを消す */
+    .coding_icon_pc img{
+        display: none;
+    }
+
+    .coding_icon_sf img{
+        display: block;
+        width: 80px;
+        margin: 0 auto 30px;
+    }
+
+    .coding_text .title{
+        font-size: 5.333vw;
+    }
+
+    .coding_text p{
+        margin-left: 10px;
+        font-size: 3.733vw;
+
+    }
+
+    /* 説明文を中央揃え */
+    .coding{
+        justify-content: center;
+    }
+
+    .works_slider{
+        display: block;
+    }
+    
+    /* 画面いっぱいに表示 */
+    .works_slider img{
+        width: 100%;
+    }
+
+    .works_slider{
+        margin-bottom: 165px;
+    }
+
+    .works_return{
+        width: 10px;
+        top: 30px;
+        right: 100px;
+    }
+
+    .works_next{
+        width: 10px;
+        top: 30px;
+        right: 40px;
+
+    }
+
+    .about_me{
+        display: block;
+    }
+
+    /* contact */
+
+    .contact_box{
+        margin-bottom: 100px;
+    }
+
+    .contact_more{
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+    }
+
+    .contact_logo{
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+    }
+
+    .contact_main{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+
+    .contact_main br{
+        display: none;
+    }
+
+    /* 著作権表示とSNS上下入れ替え */
+    .footer_end{
+        flex-direction: column-reverse;
+        
+    }
+
+    .footer_end p{
+        text-align: center;
+        margin-bottom: 30px;
+
+    }
+
+    .footer_sns{
+        margin-bottom: 30px;
+    }
+
+    .topbtn_sf{
+        display: block;
+        
+    }
+
+    .topbtn_sf .arrow2{
+        width: 30px;
+        height: 30px;
+        border: 5px solid;
+        border-color: #565656 #565656 transparent transparent;
+        transform: rotate(-45deg);
+        margin: 0 auto;
+        
+    }
+
+    .about_logo_sf{
+        display: block;
+        width: 138px;
+        margin: 0px auto 65px;
+    }
+
+    .about_me h2{
+        display: none;
+    }
+
+
+    .about_img img{
+        width: 259px
+    }
+
+    .about_text{
+        margin: 0px auto 70px;
+        width: 85%;
+        font-size: 3.733vw;
+        line-height: 1.64;
+        font-feature-settings: "palt";
+    }
+
+    .about_main{
+        width: 100%;
+    }
+
+    .about_more{
+        margin-top: 0px;
+        margin-bottom: 125px;
+    }
+
+    /* フッダーのラインを消す */
+    .footer_border{
+        display: none;
+    }
+
+    .footer_nav{
+        display: none;
+    }
+
+    .hamburger_nav_inner li p{
+        font-size: 3.733vw;
+    }
+
+    .toppage{
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+
+
 }

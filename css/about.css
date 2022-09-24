@@ -52,12 +52,12 @@ img {
 /*下層ページheader*/
 
 .header_wrap{
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .header{
     max-width: 1070px;
-    margin: 80px auto;
+    margin: 0px 30px 80px;
 }
 
 .header img{
@@ -101,6 +101,10 @@ img {
     justify-content: center;
     margin-bottom: 40px;
 
+}
+
+.about_img{
+    width: 300px;
 }
 
 .about_logo img{
@@ -182,7 +186,6 @@ img {
 
 .contact_box{
     position: relative;
-    z-index: -1;
     margin-bottom: 155px;
 }
 
@@ -284,8 +287,47 @@ img {
 
 /* ハンバーガーメニュー */
 
+.toppage{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.toppage_text{
+    margin-bottom: 250px;
+}
+
+.toppage_text p{
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: 1.75;
+    font-family: sofia-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.toppage img{
+    width: 176px;
+}
+
 .hamburger_nav_inner{
     display: none;
+    z-index: 50;
+}
+
+.hamburger_nav_inner li p{
+    padding-top: 20px;
+    font-family: sofia-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #FFF;
+    margin: 5px 0px 60px;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+}
+
+.hamburger_nav_inner li img{
+    height: 40px;
 }
 
 .hamburger_btn{
@@ -365,6 +407,9 @@ img {
 .hamburger_nav_inner{
     position: absolute;
     position: fixed;
+    position: fixed;
+    overflow-y: scroll; 
+    z-index: 99;
     top: 0;
     left: 0;
     width: 100%;
@@ -373,7 +418,7 @@ img {
 }
 
 .hamburger_nav_inner ul{
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -384,4 +429,144 @@ img {
     color: #FFF;
     font-size: 18px;
     text-align: center;
+}
+
+.about_sf{
+    display: none;
+}
+.main_title_sf{
+    display: none;
+}
+
+.about_greeting br{
+    display: none;
+}
+
+
+@media screen and (max-width:767px){
+            /* フッダーのラインを消す */
+            .footer_border{
+                display: none;
+            }
+        
+            .footer_nav{
+                display: none;
+            }
+    
+            /* 著作権表示とSNS上下入れ替え */
+            .footer_end{
+                flex-direction: column-reverse;
+                
+            }
+            .header_text p{
+                display: none;
+            }
+        
+            .footer_end p{
+                text-align: center;
+                margin-bottom: 30px;
+        
+            }
+        
+            .footer_sns{
+                margin-bottom: 30px;
+            }
+    
+            .form{
+                margin: 0 auto;
+            }
+
+            .contact_box{
+                margin-bottom: 100px;
+            }
+        
+            .contact_more{
+                top: 75%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+        
+            }
+        
+            .contact_logo{
+                top: 20%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+        
+            }
+        
+            .contact_main{
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+            }
+        
+            .contact_main br{
+                display: none;
+            }
+            
+
+
+            .about{
+                display: none;
+            }
+            .main_title{
+                display: none;
+            }
+
+            .about_sf{
+                display: block;
+            }
+            .main_title_sf{
+                display: block;
+            }
+
+            .about_me{
+                flex-direction: column-reverse;
+                padding: 0px 40px;
+        
+            }
+
+            .about_greeting{
+                font-size: 4.267vw;
+                text-align: center;
+                margin: 0px 50px 105px;
+            }
+
+            .about_greeting br{
+                display: block;
+            }
+
+            .main_text{
+                font-size: 5.067vw;
+            }
+
+            .main_title_sf{
+                padding: 0px 40px;
+            }
+
+            .sub_text{
+                font-size: 3.733vw;
+                line-height: 2.142;
+                letter-spacing: 0.05em;
+                margin-bottom: 100px;
+            }
+
+            .about_text{
+                width: 100%;
+                font-size: 5.333vw;
+                padding-top: 50px;
+            }
+
+            .hamburger_nav_inner li p{
+                font-size: 3.733vw;
+            }
+
+            .toppage{
+                margin-top: 25px;
+                margin-left: 25px;
+            }
+            
+
+
 }
